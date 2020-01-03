@@ -1,0 +1,56 @@
+.leftbox {
+  width: 30%;
+  height: auto;
+  float: left;
+  background-color: #f8f8f8;
+}
+
+.rightbox {
+  width: 70%;
+  height: auto;
+  float: left;
+}
+
+.topiclass {
+  color: #9a9a9a;
+  padding: 30rpx;
+}
+
+.active {
+  color: #3a3a3a;
+  background-color: #fff;
+}
+
+.borderleft {
+  margin-right: 10px;
+  border-left: 3px solid #3a3a3a;
+  margin-left: -30rpx;
+}
+
+.weui-media-box__hd_in-appmsg {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.weui-panel:before {
+  border-top: none;
+}
+
+.weui-panel:after {
+  border-bottom: none;
+}
+
+.weui-media-box:before {
+  border-top: none;
+}
+
+.btn-bottom {
+  position: absolute;
+  bottom: 20rpx;
+  color: #fff;
+  background-color: #605c6b;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 24px;
+  left: 40%;
+}

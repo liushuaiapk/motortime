@@ -1,0 +1,97 @@
+<view class="weui-panel">
+  <view class="weui-panel__bd">
+    <view class="weui-media-box_text member-box">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg question-head f-l">
+        <image class="weui-media-box__thumb question-pic" src="../../images/question.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="ellipsis-2 f-w f-16">雷克萨斯NX300全驱版本，后轮最大能分到多少动力?</view>
+      </view>
+      <view class="f-14 member-text ellipsis-2">有些四驱车后轮只能分到20％，不知道NX300可以分多少动力，求大神告知。
+      </view>
+    </view>
+    <view class="weui-media-box__info">
+      <view class="weui-media-box__info__meta collectnum">
+        <button class="weui-btn" size="mini">斯巴鲁</button>
+      </view>
+      <view class="f-r disflex">
+        <view class="answer mr-10">
+          <image class="answer-pic" src="../../images/answer.png"></image>
+          我要回答</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="answer-box">
+  <view class="weui-panel">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box_text member-box">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg member-head f-l">
+          <image class="weui-media-box__thumb member-pic" src="../../images/0.jpg" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="atten">+ 关 注</view>
+          <view class="weui-media-box__title f-w">斑布大斑布</view>
+          <view class="weui-media-box__desc">汽车时间兴趣号·1天前回答</view>
+        </view>
+        <navigator url="/pages/answerInfo/answerInfo">
+          <view class="f-16 f-w member-text">斯巴鲁的ES系统好用吗？</view>
+          <view class="f-16 ellipsis-4">
+            <image class="weui-media-box__thumb question-pic" src="../../images/answers.png" /> 8.59万元起售 新款东风风神AX5正式上市8.59万元起售 新款东风风神AX5正式上市8.59万元起售 新款东风风神AX5正式上市</view>
+          <view class="checkmore">查看答案</view>
+        </navigator>
+      </view>
+      <view class="pic-box">
+        <image class="weui-media-box__thumb" src="../../images/1.jpg"> </image>
+      </view>
+      <view class="weui-media-box__info">
+        <!-- <view class="source">故障问题</view> -->
+        <view class="weui-media-box__info__meta f-r disflex">
+          <image class="oper-pic mr-20" src="/images/zan-active.png"></image>
+          <view>100</view>
+        </view>
+        <view class="weui-media-box__info__meta f-r disflex">
+          <image class="oper-pic mr-20" src="/images/comment.png"></image>
+          <view>100</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-panel">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box_text member-box">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg member-head f-l">
+          <image class="weui-media-box__thumb member-pic" src="../../images/0.jpg" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="atten">+ 关 注</view>
+          <view class="weui-media-box__title f-w">斑布大斑布</view>
+          <view class="weui-media-box__desc">汽车时间兴趣号·1天前回答</view>
+        </view>
+        <navigator url="/pages/answerInfo/answerInfo">
+          <view class="f-16 f-w member-text">斯巴鲁的ES系统好用吗？</view>
+          <view class="weui-media-box_text answer_text">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg f-l img-background">
+              <image class="weui-media-box__thumb" src="../../images/0.jpg" mode="widthFix" />
+            </view>
+            <view class="f-16 ellipsis-4">
+              <image class="weui-media-box__thumb question-pic" src="../../images/answers.png" /> 8.59万元起售 新款东风风神AX5正式上市8.59万元起售 新款东风风神AX5正式上市8.59万元起售 新款东风风神AX5正式上市</view>
+          </view>
+          <view class="checkmore">查看答案</view>
+        </navigator>
+      </view>
+      <view class="weui-media-box__info">
+        <view class="source">故障问题</view>
+        <view class="weui-media-box__info__meta f-r disflex">
+          <image class="oper-pic mr-20" src="/images/zan-active.png"></image>
+          <view>100</view>
+        </view>
+        <view class="weui-media-box__info__meta f-r disflex">
+          <image class="oper-pic mr-20" src="/images/comment.png"></image>
+          <view>100</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

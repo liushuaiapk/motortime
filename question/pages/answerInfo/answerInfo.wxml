@@ -1,0 +1,224 @@
+<view style="position: relative;bottom:{{botheight}}rpx">
+  <view class="weui-panel" style="margin-top:{{botheight}}rpx">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box_text member-box">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg question-head f-l">
+          <image class="weui-media-box__thumb question-pic" src="../../images/question.png" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="ellipsis-2 f-w f-16">雷克萨斯NX300全驱版本，后轮最大能分到多少动力?</view>
+        </view>
+        <view class="f-14 member-text ellipsis-2">有些四驱车后轮只能分到20％，不知道NX300可以分多少动力，求大神告知。
+        </view>
+      </view>
+      <view class="weui-media-box__info">
+        <view class="weui-media-box__info__meta collectnum">
+          <button class="weui-btn" size="mini">斯巴鲁</button>
+        </view>
+        <view class="f-r disflex">
+          <view class="answer mr-10">
+            <image class="answer-pic" src="../../images/answer.png"></image>
+            我要回答</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="answer-box">
+    <view class="weui-panel">
+      <view class="weui-panel__bd">
+        <view class="weui-media-box_text member-box">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg member-head f-l">
+            <image class="weui-media-box__thumb member-pic" src="../../images/0.jpg" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="atten">+ 关 注</view>
+            <view class="weui-media-box__title f-w">斑布大斑布</view>
+            <view class="weui-media-box__desc">汽车时间兴趣号·1天前回答</view>
+          </view>
+          <view class="f-16 f-w member-text">斯巴鲁的ES系统好用吗？</view>
+          <view class="f-16 ellipsis-4">
+            <image class="weui-media-box__thumb question-pic" src="../../images/answers.png" /> 8.59万元起售 新款东风风神AX5正式上市8.59万元起售 新款东风风神AX5正式上市8.59万元起售 新款东风风神AX5正式上市</view>
+          <view class="checkmore">查看答案</view>
+        </view>
+        <!-- <view class="pic-box">
+        <image class="weui-media-box__thumb" src="../../images/1.jpg"> </image>
+      </view> -->
+        <view class="text-c">
+          <view class="disflexd">
+            <view class="recom mr-10">
+              <image class="recom-pic" src="../../images/zan-active.png"></image>
+              采纳答案</view>
+          </view>
+          <view class="disflexd">
+            <view class="recom mr-10">
+              <image class="recom-pic" src="../../images/nozan.png"></image>
+              没帮助</view>
+          </view>
+          <view class="disflexd">
+            <view class="recom mr-10">
+              <image class="recom-pic" src="../../images/addquestion.png"></image>
+              追加问题</view>
+          </view>
+        </view>
+        <view class="weui-media-box__info">
+          <view class="f-l">阅读量2988</view>
+          <view class="weui-media-box__info__meta f-r disflex">
+            <image class="oper-pic mr-20" src="/images/zan-active.png"></image>
+            <view>100</view>
+          </view>
+          <view class="weui-media-box__info__meta f-r disflex">
+            <image class="oper-pic mr-20" src="/images/comment.png"></image>
+            <view>100</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="comment">
+    <view class="f-13 f-w f-l comfont">全部评论</view>
+  </view>
+  <view class="commentlist">
+    <view class="weui-ownpanel weui-panel">
+      <view class="comemhead f-l">
+        <image class="member-heads" src="../../images/0.jpg"></image>
+      </view>
+      <view class="f-l right-list">
+        <view class="ml-10">
+          <text class="f-15 f-w">斑布大斑布</text>
+          <text class="c-yello sofa ml-10">沙发</text>
+          <view class="f-r">
+            <image class="recom-pic mr-20" src="/images/zan.png"></image>
+            <text class="f-12 c-gray">100</text>
+          </view>
+        </view>
+        <view class="f-15 ml-10">车真好看，我要买10辆！</view>
+        <view class="f-12 ml-10 mb-30">
+          <text class="c-gray">2019-05-28 15:05:21 · </text>
+          <text>回复(10)</text>
+          <view class="f-r c-gray f-12">删除</view>
+        </view>
+        <view class="replylist f-13">
+          <view class="reply mt-10">
+            <text class="c-blue">奔波霸：</text>
+            <text>确实不错</text>
+          </view>
+          <view class="reply mt-10">
+            <text class="c-blue">斑布大斑布</text>
+            <text>回复</text>
+            <text class="c-blue">@奔波霸：</text>
+            <text>我觉得也不错</text>
+          </view>
+          <view class="reply mt-10">
+            <text class="c-blue">斑布大斑布</text>
+            <text>回复</text>
+            <text class="c-blue">@奔波霸：</text>
+            <text>我觉得也不错我觉得也不错我觉得也不错我觉得也不错</text>
+          </view>
+          <view class="replymore mt-10 c-blue"> 共20条回复> </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-ownpanel weui-panel">
+      <view class="comemhead f-l">
+        <image class="member-heads" src="../../images/0.jpg"></image>
+      </view>
+      <view class="f-l right-list">
+        <view class="ml-10">
+          <text class="f-15 f-w">斑布大斑布</text>
+          <text class="c-yello f-12 ml-10">2楼</text>
+          <view class="f-r">
+            <image class="recom-pic mr-20" src="/images/zan.png"></image>
+            <text class="f-12 c-gray">100</text>
+          </view>
+        </view>
+        <view class="f-15 ml-10">车真好看，我要买10辆！</view>
+        <view class="f-12 ml-10 mb-30">
+          <text class="c-gray">2019-05-28 15:05:21 · </text>
+          <text>回复(10)</text>
+          <view class="f-r c-gray f-12">举报</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-ownpanel weui-panel">
+      <view class="comemhead f-l">
+        <image class="member-heads" src="../../images/0.jpg"></image>
+      </view>
+      <view class="f-l right-list">
+        <view class="ml-10">
+          <text class="f-15 f-w">斑布大斑布</text>
+          <text class="c-yello f-12 ml-10">3楼</text>
+          <view class="f-r">
+            <image class="recom-pic mr-20" src="/images/zan.png"></image>
+            <text class="f-12 c-gray">100</text>
+          </view>
+        </view>
+        <view class="f-15 ml-10">车真好看，我要买10辆！</view>
+        <view class="f-12 ml-10 mb-30">
+          <text class="c-gray">2019-05-28 15:05:21 · </text>
+          <text>回复(10)</text>
+          <view class="f-r c-gray f-12">举报</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="posbottom" style="height:{{botheight}}px" hidden="{{inputshow}}">
+    <view class="weui-input" placeholder="" bindtap="focusinput">发表评论...</view>
+    <view class="iconright">
+      <view class="bottom-icon">
+        <image class="bicon mr-10" src="/images/comment.png"></image>
+        <text class="c-gray f-12">{{comment_num}}</text>
+      </view>
+      <view class="bottom-icon" data-code="{{id}}" data-coll="{{is_collect}}" bindtap="bindCollect">
+        <image class="bicon" src="/images/{{is_collect==0 ? 'collect_active' : 'collect'}}.png"></image>
+      </view>
+      <view class="bottom-icon" bindtap="sharePic">
+        <image class="bicon" src="/images/shared.png"></image>
+
+      </view>
+    </view>
+  </view>
+  <view class="shade" wx:if="{{select}}" bindtap='close' catchtouchmove='ture'></view>
+  <view class="posbottomd" style="height:{{bottheight+120}}px" hidden="{{!inputshow}}">
+    <view class="commpic-box">
+      <view class="weui-uploader__bd">
+        <view class="weui-uploader__files" id="uploaderFiles">
+          <block wx:for="{{files}}" wx:key="*this">
+            <view class="weui-uploader__file">
+              <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" bindtap="previewImage" id="{{item}}" />
+              <view class="weui-badge picdel" data-num='{{index}}' bindtap="delpic">X</view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    <view class="mt-10" style="display:flex">
+      <input class="weui-inputd" placeholder="{{inputplac}}" cursor-spacing="50" value="{{comcontent}}" bindinput='contentInput' focus="{{inputshow}}" bindkeyboardheightchange='keychange'></input>
+      <button class="weui-btn mini-btn btn-save" bindtap="posted" disabled="{{btnDisabled}}">发表</button>
+    </view>
+    <view class="uplode-box" wx:if="{{uplode}}">
+      <image src="/images/uplode.png" class="uplodedemo" bindtap="chooseImage"></image>
+    </view>
+  </view>
+</view>
+<view class="shaded" wx:if="{{maskBar}}" bindtap='closemask' catchtouchmove='ture'></view>
+<view class='maskBarbottom' wx:if="{{maskBarbottom}}">
+  <view class="weui-grids mt-20">
+    <button open-type="share" class="weui-grid share-img-button share-grid">
+      <image class="weui-grid__icon weui-sharepic" src="/images/wecheck.png" />
+      <view class="weui-grid__label">微信好友</view>
+    </button>
+    <view bindtap='showposter' class="weui-grid share-grid">
+      <image class="weui-grid__icon weui-sharepic" src="/images/friend.png" />
+      <view class="weui-grid__label">朋友圈</view>
+    </view>
+  </view>
+</view>
+<view class='maskBar' wx:if="{{showmask}}">
+  <view class='backmask'>
+    <image class="share_url" src="{{share_url}}" data-src="{{share_url}}" data-img="{{share_urllist}}" bindtap="previewImg"></image>
+  </view>
+  <view class="knowbox">
+    <button class='savepic' bindtap='closemask'>知道了</button>
+  </view>
+</view>

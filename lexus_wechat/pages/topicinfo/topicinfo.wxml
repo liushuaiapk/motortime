@@ -1,0 +1,72 @@
+<view class="topicimg" style="background-image:url('{{info.pic_url}}')">
+  <view class="topicinfo">
+    <view class="f-20 f-w">#{{info.name}}#</view>
+  </view>
+</view>
+<view class="topiccontent f-13 pd-30" wx:if="{{info.remark}}">{{info.remark}}</view>
+<view class="pd-30">
+  <view class="f-12 c-gray">发起人：{{info.user.user_name}}</view>
+  <view class="f-12 c-gray">
+    <span wx:if="{{item.read_num>0}}">阅读：{{item.read_num}}</span>
+    <span wx:if="{{item.recom_num>0}}">讨论：{{item.recom_num>0}}</span>
+  </view>
+  <!-- <view class="f-12 c-gray">#123#</view> -->
+</view>
+<view class="topiclist">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_example ">
+      <view class="weui-cell__bd">
+        <span class="f-15 f-w">#{{info.name}}# </span>
+      </view>
+      <view class="weui-cell__ft">
+        <span class="f-r f-12">·{{total}}条内容</span>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="listbox">
+  <view class="leftbox">
+    <view class="mb-20" wx:for="{{listLeft}}" wx:if="{{item.image.length>0}}">
+      <view data-code="{{item.id}}" data-url="{{item.url}}" bindtap="goBbsinfo">
+        <image class="pic" src="{{item.image[0]}}" mode="widthFix"></image>
+        <view class="f-12 f-w pd-30">{{item.title}}</view>
+      </view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_example ">
+          <view class="weui-cell__hd memberpic">
+            <image class="member-pic" src="{{item.user.headimg_url?item.user.headimg_url:'../../images/default.png'}}" mode="aspectFill"></image>
+          </view>
+          <view class="weui-cell__bd ml-20">
+            <span class="f-12 c-gray">{{item.user.user_name}}</span>
+          </view>
+          <view class="weui-cell__ft">
+            <image class="collectpic" src="{{item.is_praise==0?'/images/collect.png':'/images/collect_have.png'}}" data-type="{{item.is_praise}}" data-num="1" data-code="{{item.id}}" bindtap="praise"></image>
+            <span class="f-12">{{item.praise_num}}</span>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="rightbox">
+    <view class="mb-20" wx:for="{{listRight}}" wx:if="{{item.image.length>0}}">
+      <view data-code="{{item.id}}" data-url="{{item.url}}" bindtap="goBbsinfo">
+        <image class="pic" src="{{item.image[0]}}" mode="widthFix"></image>
+        <view class="f-12 f-w pd-30">{{item.title}}</view>
+      </view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_example ">
+          <view class="weui-cell__hd memberpic">
+            <image class="member-pic" src="{{item.user.headimg_url?item.user.headimg_url:'../../images/default.png'}}" mode="aspectFill"></image>
+          </view>
+          <view class="weui-cell__bd ml-20">
+            <span class="f-12 c-gray">{{item.user.user_name}}</span>
+          </view>
+          <view class="weui-cell__ft">
+            <image class="collectpic" src="{{item.is_praise==0?'/images/collect.png':'/images/collect_have.png'}}" data-type="{{item.is_praise}}" data-num="2" data-code="{{item.id}}" bindtap="praise"></image>
+            <span class="f-12">{{item.praise_num}}</span>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,114 @@
+.bg-pic {
+  width: 100%;
+  height: 500rpx;
+  position: fixed;
+  top: 0;
+}
+
+.scrollist {
+  padding-bottom: 90rpx;
+}
+
+.memberinfo {
+  position: relative;
+  height: 360rpx;
+  margin: 0 30rpx;
+  padding: 40rpx;
+  margin-top: 45%;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 1.5rpx 0 3.75rpx 0 #dedad9, 0.75rpx 5.25rpx 9.75rpx 0 #dad4d3;
+}
+
+.memavatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 3rpx;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  /* text-align: center; */
+}
+
+.boxi {
+  width: 33.33%;
+}
+
+.dynamicbox {
+  padding: 30rpx 0;
+  position: relative;
+  background-color: #fff;
+}
+
+.dynamic {
+  padding: 0 30rpx;
+}
+
+.lefttime {
+  width: 20%;
+  float: left;
+}
+
+.years {
+  color: #9a9a9a;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.dislinblock {
+  width: 100%;
+  display: inline-block;
+}
+
+.camerabox {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 3rpx;
+  text-align: center;
+  background-color: #f8f8f8;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.camera {
+  width: 70rpx;
+  height: 60rpx;
+}
+
+.rightbox {
+  width: 80%;
+  float: left;
+  padding-bottom: 40rpx;
+  border-bottom: 2rpx solid #f8f8f8;
+}
+
+.lists {
+  padding: 0 30rpx;
+}
+
+.dynamicpic {
+  width: 100%;
+  height: 380rpx;
+  border-radius: 3rpx;
+}
+
+.binpic {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.picicon {
+  width: 32rpx;
+  height: 32rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: -60rpx;
+  position: relative;
+}
+
+.weui-half-screen-dialog__desc {
+  padding-bottom: 60rpx;
+}

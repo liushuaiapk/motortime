@@ -1,0 +1,29 @@
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.weui-cell:before {
+  left: 0;
+}
+
+.weui-cell {
+  height: 70px;
+}
+
+.weui-memberinfo {
+  padding: 0 16px;
+}
+
+.btn-save {
+  width: 90% !important;
+  background: #605c6b;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 28rpx;
+}
+
+button:not([size='mini']) {
+  min-height: 35px;
+}

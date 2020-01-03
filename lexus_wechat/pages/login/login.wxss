@@ -1,0 +1,58 @@
+.region {
+  width: 100%;
+  font-size: 30rpx;
+  position: fixed;
+  top: 0rpx;
+  z-index: 999;
+}
+
+.back {
+  width: 80rpx;
+}
+
+.back-pic {
+  width: 20rpx;
+  height: 40rpx;
+}
+
+.login-box {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 45%;
+}
+
+.login-bg {
+  width: 75px;
+  height: 80px;
+}
+
+.btn-box {
+  position: fixed;
+  text-align: center;
+  padding: 30rpx;
+  display: flex;
+  bottom: 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+button:not([size='mini']) {
+  width: 120px;
+}
+
+.login {
+  width: 180rpx;
+  background: #615d6b;
+  color: #fff;
+}
+
+.nologin {
+  width: 180rpx;
+  background: #f8f8f8;
+}
+
+button {
+  padding: 11px 20px;
+}

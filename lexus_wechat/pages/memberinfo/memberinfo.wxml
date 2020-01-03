@@ -1,0 +1,72 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="weui-cells weui-cells_after-title f-13">
+    <view class="weui-cell weui-memberinfo" bindtap="changeHead">
+      <view class="weui-cell__hd">
+        <view class="weui-label">头像</view>
+      </view>
+      <view class="weui-cell__bd text-r">
+        <image class="avatar" src="{{avatar?avatar:'/images/default.png'}}" mode="aspectFill"></image>
+      </view>
+    </view>
+    <view class="weui-cell weui-memberinfo">
+      <view class="weui-cell__hd">
+        <view class="weui-label">昵称</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" placeholder="请输入昵称" bindinput="choose" name='username' value="{{userInfo.username}}" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label">性别</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="bindSexChange" value="{{sexIndex}}" range="{{sex}}" name="sex">
+
+          <view class="weui-select weui-select_in-select-after">{{sex[sexIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label">家乡</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" name='pickercity'>
+
+          <view class="weui-select weui-select_in-select-after" wx:if='{{region[0]}}'>
+            {{region[0]}}，{{region[1]}}，{{region[2]}}
+          </view>
+          <view class="weui-select weui-select_in-select-after c-gray" wx:else>请选择家乡</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell weui-memberinfo">
+      <view class="weui-cell__hd">
+        <view class="weui-label">签名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name='intro' placeholder="请输入签名" bindinput="choose" value="{{userInfo.intro}}" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label">注册时间</view>
+      </view>
+      <view class="weui-cell__bd text-r">
+        <view class="weui-select weui-select_in-select-after c-gray">{{userInfo.reg_time}}</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_select" bindtap="openUrl" hidden="true">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label">认证车系</view>
+      </view>
+      <view class="weui-cell__bd text-r">
+        <view class="weui-select weui-select_in-select-after">柯尼塞格CCX</view>
+      </view>
+    </view>
+  </view>
+  <view class="mt-40" hidden="{{!choose}}">
+    <button class="btn-save" formType="submit">保存</button>
+  </view>
+</form>

@@ -1,0 +1,82 @@
+.topicimg {
+  width: 100%;
+  height: 460rpx;
+  color: #fff;
+  position: relative;
+  background-size: 100% 460rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.topicinfo {
+  padding-top: 25%;
+  text-align: center;
+}
+
+.topiccontent {
+  text-indent: 52rpx;
+}
+
+.weui-cell {
+  padding: 30rpx;
+}
+
+.topiclist {
+  border-top: 20rpx solid #f8f8f8;
+  color: #9a9a9a;
+}
+
+.listbox {
+  width: 100%;
+  display: flex;
+  background-color: #f8f8f8;
+}
+
+.leftbox {
+  width: 50%;
+  float: left;
+  border-right: 10rpx solid #f8f8f8;
+  border-bottom: 20rpx solid #f8f8f8;
+}
+
+.rightbox {
+  width: 50%;
+  float: left;
+  border-left: 10rpx solid #f8f8f8;
+  border-bottom: 20rpx solid #f8f8f8;
+}
+
+.mb-20 {
+  background-color: #fff;
+}
+
+.pic {
+  width: 100%;
+}
+
+.memberpic {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 3rpx;
+}
+
+.member-pic {
+  width: 100%;
+  height: 100%;
+  margin-right: 10rpx;
+}
+
+.collectpic {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+.weui-cells:before {
+  border-top: 0rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.weui-cells:after {
+  border-bottom: 0rpx solid rgba(0, 0, 0, 0.1);
+}

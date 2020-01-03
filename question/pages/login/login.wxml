@@ -1,0 +1,12 @@
+<view class='region' style='height:{{regionH}}px'>
+  <view class='f-l back' style='margin-top:{{handaddrT}}px;' bindtap="goback" wx:if="{{!logining}}">
+    <image class="back-pic ml-30" src="/images/back.png"></image>
+  </view>
+</view>
+<view class="login-box" style="height:{{windowHeight}}px">
+  <image class="login-bg" src="{{login_bg}}"></image>
+</view>
+<view class="btn-box f-r" style="bottom:{{btn_bottom}}px" wx:if="{{login_bg}}">
+  <button class="login f-14" open-type="getUserInfo" bindgetuserinfo="userinfo">授权登录</button>
+  <button class="nologin f-14" bindtap='goback' disabled="{{logining}}">暂不登录</button>
+</view>

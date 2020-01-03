@@ -1,0 +1,23 @@
+@import '../bbsinfo/bbsinfo.wxss';
+@import '../article/article.wxss';
+
+.comsort {
+  width: 28rpx;
+  height: 26rpx;
+}
+
+.weui-recell {
+  padding: 30rpx 0;
+}
+
+.remember-head {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.remember-pic {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 3rpx;
+}
+

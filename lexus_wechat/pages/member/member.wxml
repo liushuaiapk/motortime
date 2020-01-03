@@ -1,0 +1,26 @@
+<view class="action-box mt-20">
+  <view class="f-w f-15">个人中心</view>
+  <view class="weui-grids">
+    <view data-url="/pages/mycollect/mycollect" class="weui-grid text-c" bindtap="openUrl">
+      <image src="/images/member/post.png" class="mynav_icon" />
+      <view class="mt-20 f-13">我的发布</view>
+    </view>
+    <view data-url="/pages/myquestion/myquestion" class="weui-grid text-c" bindtap="openUrl">
+      <image src="/images/member/comment.png" class="mynav_icon" />
+      <view class="mt-20 f-13">我的评论</view>
+    </view>
+    <view data-url="/pages/mypost/mypost" class="weui-grid text-c" bindtap="openUrl">
+      <image src="/images/member/message.png" class="mynav_icon" />
+      <view class="mt-20 f-13">我的消息</view>
+    </view>
+    <!-- /pages/motormaster/motormaster -->
+    <view data-url="" class="weui-grid text-c" bindtap="openUrl">
+      <image src="/images/member/approve.png" class="cars_icon" />
+      <view class="mt-20 f-13">车主认证</view>
+    </view>
+    <view data-url="/pages/memberinfo/memberinfo" class="weui-grid text-c" bindtap="openUrl">
+      <image src="/images/member/memberinfo.png" class="mynav_icon" />
+      <view class="mt-20 f-13">我的信息</view>
+    </view>
+  </view>
+</view>

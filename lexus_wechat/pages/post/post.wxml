@@ -1,0 +1,30 @@
+<view class="postitle">
+  <input class="weui-input f-13" bindinput="wtitle" value="{{title}}" placeholder="请填写标题" />
+</view>
+<view class="postcontent">
+  <textarea class="weui-textarea f-13" value="{{content}}" bindinput="wcontent" placeholder="请填写内容" style="height: 120rpx" />
+</view>
+<view class="picbox">
+  <view class="weui-grids">
+    <block wx:for="{{images_url}}" wx:key="*this">
+      <view class="weui-grid">
+        <image class="weui-grid__icon" src="{{item}}" mode="aspectFill" />
+        <image class="delpic" src="/images/delpic.png" data-num="{{index}}" bindtap="delpic"></image>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="bottombox">
+  <view>
+    <span class="f-12 c-gray ml-30">关联话题</span>
+    <span class="weui-badge ml-10" bindtap="delTopic" wx:for="{{topicname}}" wx:if="{{index<1}}">#{{item.name}}#</span>
+    <span class="weui-badge ml-10" bindtap="delTopic" wx:if="{{topicname.length>1}}">...</span>
+    <span class="weui-badged ml-10" wx:if="{{topicname.length==0}}">#暂时没有选择话题#</span>
+  </view>
+  <view class="pdtop">
+    <image class="post_pic ml-30" src="/images/post_pic.png" bindtap="chooseImg"></image>
+    <!-- <image class="post_pic" src="/images/post_video.png"></image> -->
+    <image class="post_pic" src="/images/post_topic.png" bindtap="chooseTopic"></image>
+    <button class="weui-btn btn-save mr-30" size="mini" bindtap="posted" disabled="{{btnDisabled}}">发表</button>
+  </view>
+</view>

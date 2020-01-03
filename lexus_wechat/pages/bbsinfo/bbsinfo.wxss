@@ -1,0 +1,154 @@
+.naviga {
+  position: fixed;
+  top: 0;
+}
+
+.arrow {
+  width: 20rpx;
+  height: 36rpx;
+  margin-left: 10px;
+  background-color: none;
+  position: fixed;
+  top: 0;
+}
+
+.toppicbox {
+  width: 100%;
+  height: 500rpx;
+}
+
+.pic {
+  width: 100%;
+  height: 500rpx;
+}
+
+.box {
+  padding-bottom: 120rpx;
+}
+
+.weui-cell {
+  padding: 30rpx;
+}
+
+.weui-cells:before {
+  border-top: 0rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.weui-cells:after {
+  border-bottom: 0rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.member-head {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.member-pic {
+  border-radius: 3rpx;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.member-text {
+  padding: 0 15px;
+}
+
+.c-username {
+  color: #605c6b;
+}
+
+.username {
+  line-height: 45px;
+}
+
+.atten {
+  width: 120rpx;
+  height: 50rpx;
+  background-color: #3a3a3a;
+  color: #fff;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 2;
+  display: inline-block;
+}
+
+.content {
+  line-height: 2;
+}
+
+.piclist {
+  width: 100%;
+  height: 500rpx;
+}
+
+.weui-badge {
+  display: inline-block;
+  padding: 5rpx 20rpx;
+  min-width: 8px;
+  border-radius: 2px;
+  background-color: #f3f9ff;
+  color: #728fc4;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+
+.othertop {
+  color: #3a3a3a;
+}
+
+.borderleft {
+  margin-right: 10px;
+  border-left: 3px solid #3a3a3a;
+}
+
+.commentinfo {
+  padding: 0 30rpx 30rpx 130rpx;
+}
+
+.comcontent {
+  color: #6a6a6a;
+}
+
+.bottombox {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+  display: flex;
+}
+
+.weui-input {
+  height: 70rpx;
+  background-color: #f8f8f8;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.btn-save {
+  color: #fff;
+  background-color: #605c6b;
+  font-weight: normal;
+  border-radius: 1.5px;
+  font-size: 28rpx !important;
+}
+
+button[size='mini'] {
+  padding: 8rpx 40rpx;
+}
+
+.btniconbox {
+  display: flex;
+  width: 38%;
+}
+
+.btnicon {
+  width: 35%;
+}
+
+.btniconr {
+  width: 30%;
+}

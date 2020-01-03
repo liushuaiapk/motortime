@@ -1,0 +1,66 @@
+<block wx:for="{{list}}" wx:item="item">
+  <view class="mymotorcar-box" data-code="{{item.id}}" data-audit="{{item.is_audit}}" bindtap="showBottom">
+    <view class="border-car">
+      <view>
+        <image class="car-pic" src="{{item.car.pic}}"></image>
+      </view>
+      <view class="f-l f-15 f-w mt-60">{{item.brand.title}}{{item.car.title}}</view>
+      <view class="f-r f-w mt-60" wx:if="{{item.is_audit==1}}">
+        <text class="province f-13">{{item.p_plate}}</text>
+        <text class="f-13 cardnum">{{item.p_num}}</text>
+      </view>
+      <view class="f-r f-w mt-60" wx:else>
+        <text class="f-12 weui-badge">认证未成功</text>
+      </view>
+    </view>
+  </view>
+</block>
+<view class="mymotor-box">
+  <view class="border">
+    <button class="addbtn f-13" bindtap="addcar">
+      <image class="add-pic" src="/images/addmotor.png"></image>
+      <view class="btn-title f-13">添加爱车</view>
+    </button>
+  </view>
+</view>
+<view class="shaded" wx:if="{{maskBar}}" bindtap='closemask' catchtouchmove='ture'></view>
+<view class="choose" animation="{{animationData}}" wx:if="{{maskBaright}}">
+  <view class="weui-navigation-bar">
+    <view class="weui-navigation-bar__placeholder" style="visible: hidden;"></view>
+    <view class="weui-navigation-bar__inner">
+      <view class='weui-navigation-bar__left'>
+        <view class="weui-navigation-bar__buttons">
+          <view bindtap="back" class="weui-navigation-bar__button weui-navigation-bar__btn_goback"></view>
+        </view>
+      </view>
+      <view class='weui-navigation-bar__center'>
+        <text>{{choosetitle}}</text>
+      </view>
+    </view>
+  </view>
+  <!--选择显示-->
+  <view hidden="{{hidden}}" class="showPy">{{showPy}}</view>
+  <view class="weui-cells weui-cells_after-title" wx:if='{{choose_set}}'>
+    <block wx:for="{{carsList}}" wx:item="item">
+      <view class="weui-cell weui-cell_example" data-code='{{item.id}}' data-name="{{item.title}}" bindtap="choose_set">
+        <view class="weui-cell__hd">
+          <image src="{{item.pic}}" class="pic-tab"></image>
+        </view>
+        <view class="weui-cell__bd f-14 f-w">{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="weui-cells weui-cells_after-title" wx:if='{{choose_type}}'>
+    <view class="weui-cell weui-cell_example car-classd">
+      <view class="weui-cell__bd f-14 c-gray">{{car_name}}</view>
+    </view>
+    <block wx:for="{{modelList}}" wx:item="item">
+      <view class="weui-cell weui-cell_example" data-name="{{item.title}}" data-code="{{item.id}}" bindtap="choose_type">
+        <view class="weui-cell__bd">
+          <view class="f-14 f-w">{{item.year}}款 {{item.title}}</view>
+          <view class="f-12 c-gray">{{item.year}} 款</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

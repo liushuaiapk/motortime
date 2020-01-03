@@ -1,0 +1,7 @@
+<view class="pd-30" wx:for="{{topicname}}">
+  <span class="weui-badge f-12"># {{item.name}} #</span>
+  <span class="f-r f-12 c-gray mt-20" data-index="{{index}}" bindtap="deltopic">删除</span>
+</view>
+<view class="btn-boxx">
+  <button class="weui-btn delall" bindtap="delall">全部删除</button>
+</view>

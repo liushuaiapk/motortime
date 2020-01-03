@@ -1,0 +1,106 @@
+.topbtn {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.headpic {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  border-radius: 1.5px;
+  padding-left: 30rpx;
+}
+
+.navtitle {
+  text-align: center;
+}
+
+.navpic {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.weui-bar_on {
+  display: inline-block;
+  font-size: 30rpx;
+  padding: 15rpx 40rpx;
+  background-color: #fff;
+  color: #3a3a3a;
+  border-bottom: 8rpx solid #3a3a3a;
+}
+
+.scroll-view_H {
+  white-space: nowrap;
+  width: 100%;
+  height: 80rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #eaeaea;
+}
+
+.nav-name {
+  display: inline-block;
+  font-size: 30rpx;
+  padding: 18rpx 40rpx;
+  color: #9a9a9a;
+  background-color: #fff;
+}
+
+.weui-panel__bd {
+  border-bottom: 2rpx solid #f8f8f8;
+}
+
+.weui-media-box {
+  padding: 30rpx;
+}
+
+.weui-media-box__hd_in-appmsg {
+  margin-right: 20rpx;
+  width: 300rpx;
+  height: 205rpx;
+  border-radius: 3rpx;
+}
+
+.weui-media-box__bd_in-appmsg {
+  position: relative;
+  height: 200rpx;
+}
+
+.arttitle {
+  vertical-align: middle;
+}
+
+.weui-badge {
+  display: inline-block;
+  padding: 5rpx 20rpx;
+  min-width: 8px;
+  border-radius: 2px;
+  background-color: #f3f9ff;
+  color: #728fc4;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+
+.source {
+  position: absolute;
+  bottom: 0;
+}
+
+.pic-box {
+  height: 600rpx;
+  object-fit: cover;
+}
+
+.picicon {
+  width: 32rpx;
+  height: 32rpx;
+  float: right;
+  margin-right: 30rpx;
+  margin-top: -60rpx;
+  position: relative;
+}

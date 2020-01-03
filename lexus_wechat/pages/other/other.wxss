@@ -1,0 +1,13 @@
+@import '../my/my.wxss';
+
+.memberinfo {
+  margin-top: 30%;
+}
+
+.scrollist {
+  padding-bottom: 5rpx;
+}
+
+.dynamicbox {
+  min-height: 900rpx;
+}

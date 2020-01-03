@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/article/article",
+    "pages/my/my",
+    "pages/login/login",
+    "pages/bbsinfo/bbsinfo",
+    "pages/topicinfo/topicinfo",
+    "pages/articleinfo/articleinfo",
+    "pages/member/member",
+    "pages/memberinfo/memberinfo",
+    "pages/post/post",
+    "pages/topic/topic",
+    "pages/topicadd/topicadd",
+    "pages/topicdel/topicdel",
+    "pages/webview/webview",
+    "pages/motormaster/motormaster",
+    "pages/carinfo/carinfo",
+    "pages/other/other",
+    "pages/mybbs/mybbs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#231815",
+    "color": "#9A9A9A",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/icon/index.png",
+        "selectedIconPath": "/images/icon/index_select.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "iconPath": "/images/icon/content.png",
+        "selectedIconPath": "/images/icon/content_select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "/images/icon/my.png",
+        "selectedIconPath": "/images/icon/my_select.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

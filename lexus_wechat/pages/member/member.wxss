@@ -1,0 +1,29 @@
+page {
+  background: #f8f8f8;
+}
+
+.action-box {
+  background: #fff;
+  padding: 30rpx;
+}
+
+.mynav_icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.cars_icon {
+  width: 36rpx;
+  height: 40rpx;
+}
+
+.weui-grids {
+  border-top: 0rpx solid rgba(0, 0, 0, 0.1);
+  border-left: 0rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.weui-grid {
+  width: 25%;
+  border-right: 0rpx solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0rpx solid rgba(0, 0, 0, 0.1);
+}

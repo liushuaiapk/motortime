@@ -1,0 +1,273 @@
+.topbtn {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.headpic {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 10%;
+  float: left;
+  border-radius: 1.5px;
+  padding-left: 30rpx;
+}
+
+.tabtop {
+  float: left;
+  width: 24%;
+}
+
+.font-gray {
+  color: #b0b0b0;
+}
+
+.font-black {
+  color: #3a3a3a;
+}
+
+.swiper {
+  width: 100%;
+  height: 450rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+  display: initial;
+}
+
+swiper .wx-swiper-dot {
+  width: 30rpx;
+  display: inline-flex;
+  height: 6rpx;
+  justify-content: space-between;
+}
+
+swiper .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+  background: #aaa;
+  border-radius: 30rpx;
+}
+
+swiper .wx-swiper-dot-active::before {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.listbox {
+  margin-bottom: 90rpx;
+}
+
+.list {
+  width: 100%;
+}
+
+.weui-cell {
+  padding: 15px;
+}
+
+.weui-cells:before {
+  border-top: 0rpx solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.weui-cells:after {
+  border-bottom: 0rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.member-head {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.member-pic {
+  border-radius: 3rpx;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.member-text {
+  padding: 0 15px;
+}
+
+.c-username {
+  color: #605c6b;
+}
+
+.c-intro {
+  color: #6a6a6a;
+}
+
+.username {
+  line-height: 45px;
+}
+
+.atten {
+  width: 120rpx;
+  height: 50rpx;
+  background-color: #3a3a3a;
+  color: #fff;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 2;
+  display: inline-block;
+}
+
+.member-text {
+  margin-top: 15rpx;
+  line-height: 2;
+}
+
+.pic-box {
+  height: 600rpx;
+  margin-top: 30rpx;
+  object-fit: cover;
+}
+
+.picicon {
+  width: 32rpx;
+  height: 32rpx;
+  float: right;
+  margin-right: 30rpx;
+  margin-top: -60rpx;
+  position: relative;
+}
+
+.mastbar {
+  width: 120rpx;
+  height: 120rpx;
+  position: fixed;
+  bottom: 200rpx;
+  right: 20rpx;
+  background: #3a3a3a;
+  border-radius: 100rpx;
+  color: #fff;
+  text-align: center;
+}
+
+.release {
+  width: 40rpx;
+  height: 44rpx;
+  margin-top: 19rpx;
+}
+
+.pd-15 {
+  padding: 10rpx 30rpx;
+}
+
+.binpic {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.weui-badge {
+  display: inline-block;
+  padding: 5rpx 20rpx;
+  min-width: 8px;
+  border-radius: 2px;
+  background-color: #f3f9ff;
+  color: #728fc4;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+
+.comment {
+  border-bottom: 2rpx solid #eaeaea;
+}
+
+.commlist {
+  padding: 20rpx 30rpx;
+}
+
+.commmember-head {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.commember-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rpx;
+}
+
+.writecomm {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.weui-input {
+  width: 70%;
+}
+
+.followpic {
+  width: 100%;
+  height: 450rpx;
+  position: fixed;
+  top: 0;
+}
+
+.followbox {
+  position: relative;
+  background: #fff;
+}
+
+.fun-box {
+  padding: 30rpx 10rpx;
+  white-space: nowrap;
+  margin-top: 30%;
+}
+
+.funpic-box {
+  width: 300rpx;
+  height: 400rpx;
+  padding: 30rpx;
+  background: #fff;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  display: inline-block;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.focuspic {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 3rpx;
+}
+
+.followname {
+  width: 100%;
+  height: 82rpx;
+  color: #605c6b;
+  white-space: pre-wrap;
+}
+
+.topicbox {
+  margin-bottom: 90rpx;
+}
+
+.topicmonth {
+  padding: 50rpx 30rpx;
+}
+
+.topicimg {
+  width: 100%;
+  height: 460rpx;
+  color: #fff;
+  position: relative;
+  background-size: 100% 460rpx;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.topicinfo {
+  position: absolute;
+  bottom: 40rpx;
+  padding-left: 30rpx;
+}

@@ -1,0 +1,151 @@
+<view class="head-top">
+  <view class="weui-panel_access">
+    <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_appmsg">
+        <view class="weui-media-box__hd head-img">
+          <image class="weui-media-box__thumb" src="{{info.img_url}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title f-w f-15">{{info.alias}}</view>
+          <view class="weui-media-box__desc ellipsis-2 f-12 my-width">{{info.share.description}}</view>
+          <view class="weui-media-box__desc f-12">12345人关注</view>
+        </view>
+        <view class="head-atten">+ 关 注</view>
+      </view>
+    </view>
+  </view>
+  <view class="nav-scroll">
+    <scroll-view class="scroll-view_H" scroll-x="true" scroll-left="{{navScrollLeft}}" scroll-with-animation="true">
+      <text wx:for='{{tabs}}' catchtap="handleTap" data-code="{{index}}" class="nav-name {{activeIndex==index ? 'weui-bar_on' : ''}}">{{item.alias}}</text>
+    </scroll-view>
+  </view>
+</view>
+<view class="info-head f-12">
+  <view class="f-l">300个讨论</view>
+  <view class="f-r select" id="the-id">
+    <image class="select-pic" src="/images/arrows.png"></image>
+  </view>
+  <view class="f-r" bindtap="select">{{selectName}}</view>
+  <view class="shade" wx:if="{{!select}}" bindtap='close' catchtouchmove='ture'></view>
+  <view class="show" hidden="{{select}}" style="top:{{top}}px">
+    <radio-group bindchange="radioChange">
+      <label class="weui-check__label">
+        <radio class="weui-check" value="看全部" checked="{{all}}" />
+        <view class="weui-cell__bd">看全部</view>
+        <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{all}}">
+          <icon class="weui-icon-radio" type="success_no_circle" size="16" color="#ffba00"></icon>
+        </view>
+      </label>
+      <label class="weui-check__label">
+        <radio class="weui-check" value="只看答案" checked="{{answer}}" />
+
+        <view class="weui-cell__bd">只看答案</view>
+        <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{answer}}">
+          <icon class="weui-icon-radio" type="success_no_circle" size="16" color="#ffba00"></icon>
+        </view>
+      </label>
+      <label class="weui-check__label">
+        <radio class="weui-check" value="只看问题" checked="{{question}}" />
+
+        <view class="weui-cell__bd">只看问题</view>
+        <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{question}}">
+          <icon class="weui-icon-radio" type="success_no_circle" size="16" color="#ffba00"></icon>
+        </view>
+      </label>
+    </radio-group>
+
+  </view>
+</view>
+<view class="weui-panel">
+  <view class="weui-panel__bd">
+    <view class="weui-media-box_text member-box">
+      <navigator url="/pages/questionInfo/questionInfo">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg question-head f-l">
+          <image class="weui-media-box__thumb question-pic" src="../../images/question.png" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="ellipsis-2 f-w f-16">雷克萨斯NX300全驱版本，后轮最大能分到多少动力?</view>
+        </view>
+        <view class="f-14 member-text ellipsis-2">有些四驱车后轮只能分到20％，不知道NX300可以分多少动力，求大神告知。
+        </view>
+      </navigator>
+    </view>
+
+    <view class="weui-media-box__info">
+      <view class="weui-media-box__info__meta collectnum">99个回答 1000个收藏</view>
+      <view class="f-r disflex">
+        <navigator url="/pages/answer/answer">
+          <view class="answer mr-10">
+            <image class="answer-pic" src="../../images/answer.png"></image>
+            我要回答</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weui-panel">
+  <view class="weui-panel__bd">
+    <view class="weui-media-box_text member-box">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg question-head f-l">
+        <image class="weui-media-box__thumb question-pic" src="../../images/question.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="ellipsis-2 f-w f-16">雷克萨斯NX300全驱版本，后轮最大能分到多少动力?</view>
+      </view>
+      <view class="f-14 member-text ellipsis-2">有些四驱车后轮只能分到20％，不知道NX300可以分多少动力，求大神告知。
+      </view>
+    </view>
+    <view class="pic-box">
+      <image class="weui-media-box__thumb" src="../../images/1.jpg"> </image>
+    </view>
+    <view class="weui-media-box__info">
+      <view class="weui-media-box__info__meta collectnum">99个回答 1000个收藏</view>
+      <view class="f-r disflex">
+        <view class="answer mr-10">
+          <image class="answer-pic" src="../../images/answer.png"></image>
+          我要回答</view>
+      </view>
+
+    </view>
+  </view>
+</view>
+<view class="weui-panel">
+  <view class="weui-panel__bd">
+    <view class="weui-media-box_text member-box">
+      <navigator url="/pages/answerInfo/answerInfo">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg member-head f-l">
+          <image class="weui-media-box__thumb member-pic" src="../../images/0.jpg" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="atten">+ 关 注</view>
+          <view class="weui-media-box__title f-w">斑布大斑布</view>
+          <view class="weui-media-box__desc">汽车时间兴趣号·1天前回答</view>
+        </view>
+        <view class="f-16 f-w member-text">斯巴鲁的ES系统好用吗？</view>
+        <view class="f-16 ellipsis-4">
+          <image class="weui-media-box__thumb question-pic" src="../../images/answers.png" /> 8.59万元起售 新款东风风神AX5正式上市8.59万元起售 新款东风风神AX5正式上市8.59万元起售 新款东风风神AX5正式上市</view>
+        <view class="checkmore">查看答案</view>
+      </navigator>
+    </view>
+    <view class="pic-box">
+      <image class="weui-media-box__thumb" src="../../images/1.jpg"> </image>
+    </view>
+    <view class="weui-media-box__info">
+      <view class="source">故障问题</view>
+      <view class="weui-media-box__info__meta f-r disflex">
+        <image class="oper-pic mr-20" src="/images/zan-active.png"></image>
+        <view>100</view>
+      </view>
+      <view class="weui-media-box__info__meta f-r disflex">
+        <image class="oper-pic mr-20" src="/images/comment.png"></image>
+        <view>100</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="mastbar">
+  <navigator url="/pages/posted/posted">
+    <image class="release" src="/images/write.png"></image>
+    <view class="text-c f-12">提问题</view>
+  </navigator>
+</view>

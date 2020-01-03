@@ -1,0 +1,234 @@
+<view class="topbtn" style="height:{{100+handtop}}rpx;background:{{navbackground}}">
+  <view class="tabtop" style="margin-top:{{handtop}}rpx" bindtap="goMember">
+    <image class="headpic" src="{{avatar?avatar:'../../images/default.png'}}" mode="aspectFill"></image>
+  </view>
+  <!-- <view class="tabtop {{topnum==0?'font-black':'font-gray'}}" style="margin-top:{{handtop}}rpx" data-code='0' bindtap="topChange">
+    <view class="f-15 f-w">
+      关注
+    </view>
+    <view class="f-12 f-w">
+      Following
+    </view>
+  </view> -->
+  <view class="tabtop {{topnum==1?'font-black':'font-gray'}}" style="margin-top:{{handtop}}rpx" data-code='1' bindtap="topChange">
+    <view class="f-15 f-w">
+      推荐
+    </view>
+    <view class="f-12 f-w">
+      Hot
+    </view>
+  </view>
+  <view class="tabtop {{topnum==2?'font-black':'font-gray'}}" style="margin-top:{{handtop}}rpx" data-code='2' bindtap="topChange">
+    <view class="f-15 f-w">
+      话题
+    </view>
+    <view class="f-12 f-w">
+      Subject
+    </view>
+  </view>
+</view>
+<view class="swiper-box" style="margin-top:{{110+handtop}}rpx" wx:if="{{topnum==1}}">
+  <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" circular='true'>
+    <block wx:for="{{imgUrls}}" wx:key='item'>
+      <swiper-item>
+        <image data-code="{{item.id}}" data-type="{{item.module.id}}" data-url="{{item.url}}" bindtap="goWebview" src="{{item.pic_url}}" mode="aspectFill" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="listbox" wx:if="{{topnum==1}}">
+  <block wx:for='{{cardsList}}' wx:key='{{item}}'>
+    <view class="list" wx:if="{{!item.video}}">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_example">
+          <view class="weui-cell__hd member-head" data-code="{{item.user.id}}" bindtap="goOther">
+            <image class="member-pic" src="{{item.user.headimg_url?item.user.headimg_url:'../../images/default.png'}}" mode="aspectFill"></image>
+          </view>
+          <view class="weui-cell__bd ml-30" data-code="{{item.user.id}}" bindtap="goOther">
+            <view class="f-w f-15 c-username">{{item.user.user_name}}</view>
+            <view class="f-12 c-intro">{{item.user.intro}}</view>
+          </view>
+          <view wx:if="{{item.user.is_follow==0}}" class="weui-cell__ft" data-id="{{item.id}}" data-code="{{item.user.id}}" bindtap="followUser">
+            <view class="atten">+ 关 注</view>
+          </view>
+        </view>
+      </view>
+      <view data-code="{{item.id}}" data-url="{{item.url}}" bindtap="goBbsinfo">
+        <view class="f-15 f-w member-text">{{item.title}}</view>
+        <view class="f-14 member-text ellipsis-4" wx:if="{{item.content}}">{{item.content}}</view>
+        <view class="pic-box" wx:if="{{item.image.length>0}}" data-img="{{item.image}}">
+          <image class="weui-media-box__thumb picmode" mode="aspectFill" src="{{item.image[0]}}"> </image>
+          <image wx:if="{{item.image.length>1}}" class="picicon" src="/images/picture.png"></image>
+        </view>
+      </view>
+      <view class="pd-15 disflex">
+        <image class="binpic" src="{{item.is_praise==0?'/images/collect.png':'/images/collect_have.png'}}" data-type="{{item.is_praise}}" data-code="{{item.id}}" bindtap="praise"></image>
+        <span class="f-12 ml-20" wx:if="{{item.praise_num>0}}" data-type="{{item.is_praise}}" data-code="{{item.id}}" bindtap="praise">{{item.praise_num}}</span>
+        <image class="binpic ml-50" src="/images/comment.png"></image>
+        <span class="f-12 ml-20" wx:if="{{item.comment_num>0}}">{{item.comment_num}}</span>
+        <view class="f-r" data-code="{{item.id}}" bindtap="openDialog">
+          <image class="binpic" src="/images/outrelay.png"></image>
+        </view>
+      </view>
+      <view class="pd-15" style="display:flex;" wx:if="{{item.topics.length>0}}">
+        <block wx:for="{{item.topics}}">
+          <navigator url="/pages/topicinfo/topicinfo?id={{item.id}}">
+            <span class="weui-badge mr-20">#{{item.name}}#</span>
+          </navigator>
+        </block>
+      </view>
+      <view class="pd-15 f-12 c-gray">
+        {{item.time_format}}
+      </view>
+      <view class="comment">
+        <view class="weui-cells weui-cells_after-title" wx:for="{{item.comments}}">
+          <view class="weui-cell weui-cell_example commlist">
+            <view class="weui-cell__hd commmember-head">
+              <image class="commember-pic" src="{{item.user.headimg_url?item.user.headimg_url:'../../images/default.png'}}" mode="aspectFill"></image>
+            </view>
+            <view class="weui-cell__bd ml-30">
+              <view class="f-12">
+                <span class="c-username f-w">{{item.user.user_name}}:</span>
+                {{item.content}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_example commlist">
+            <view class="weui-cell__hd commmember-head">
+              <image class="commember-pic" src="{{avatar?avatar:'../../images/default.png'}}"></image>
+            </view>
+            <view class="weui-cell__bd ml-30">
+              <view class="f-12 c-gray">
+                <view class="weui-cell" style="padding: 15px 0;">
+                  <view class="weui-cell__hd">
+                    <image class="writecomm mr-10" src="/images/writecomm.png"></image>
+                  </view>
+                  <view class="weui-cell__bd">
+                    <input class="weui-input" data-index="{{index}}" bindinput="inputwrite" bindfocus="inputfocus" bindkeyboardheightchange="binkeyheight" placeholder="添加评论..." />
+                  </view>
+                  <view class="weui-cell__ft">
+                    <view class="atten" data-code="{{item.id}}" bindtap="bbsTalk" wx:if="{{postbtn==index}}">发 表</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view wx:if="{{topnum==0}}">
+  <image class="followpic" src="/images/focus.png"></image>
+  <scroll-view class="fun-box text-c" scroll-x="{{true}}">
+    <block wx:for='{{listy}}' wx:key='item'>
+      <view class="funpic-box">
+        <image src="{{item.headimg_url}}" class="focuspic" mode="aspectFill"></image>
+        <view class="f-14 f-w ellipsis-2 followname">{{item.user_name}}</view>
+        <view class="f-12 mt-20 c-gray ellipsis-2 followname" wx:if="{{item.intro}}">{{item.intro}}</view>
+        <view class="f-12 mt-20 c-gray" wx:else>暂无简介</view>
+        <view class="atten mt-30">+ 关 注</view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="followbox">
+    <block wx:for='{{flowllList}}' wx:key='item'>
+      <view class="list" wx:if="{{!item.video}}">
+        <navigator url="/pages/articleinfo/articleinfo?scene={{item.id}}&tagsid=1">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_example ">
+              <view class="weui-cell__hd member-head">
+                <image class="member-pic" src="{{item.user.headimg_url?item.user.headimg_url:'../../images/default.png'}}" mode="aspectFill"></image>
+              </view>
+              <view class="weui-cell__bd ml-30">
+                <view class="f-w f-15 c-username">{{item.user.user_name}}</view>
+                <view class="f-12">{{item.user.intro}}</view>
+              </view>
+              <view class="weui-cell__ft">
+                <view class="atten">+ 关 注</view>
+              </view>
+            </view>
+          </view>
+          <view class="f-15 f-w member-text">{{item.title}}</view>
+          <view class="f-14 member-text ellipsis-2" wx:if="{{item.content}}">{{item.content}}</view>
+          <view class="pic-box" data-img="{{item.image}}">
+            <image class="weui-media-box__thumb picmode" mode="aspectFill" src="{{item.image[0]}}"> </image>
+          </view>
+        </navigator>
+        <view class="pd-15 disflex">
+          <image class="binpic" src="/images/collect.png"></image>
+          <span class="f-12 ml-20 mr-50">120</span>
+          <image class="binpic" src="/images/comment.png"></image>
+          <span class="f-12 ml-20">2000</span>
+          <view class="f-r">
+            <image class="binpic" src="/images/outrelay.png"></image>
+          </view>
+        </view>
+        <view class="pd-15">
+          <block wx:for="{{item.topics}}">
+            <navigator url="/pages/topicinfo/topicinfo?id={{item.id}}">
+              <view class="weui-badge mr-20">#{{item.name}}#</view>
+            </navigator>
+          </block>
+        </view>
+        <view class="pd-15 f-12 c-gray">
+          {{item.time_format}}
+        </view>
+        <view class="pd-15 comment">
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="topicbox" style="margin-top:{{110+handtop}}rpx" wx:if="{{topnum==2}}">
+  <block wx:for="{{topicList}}" wx:key="item">
+    <view class="f-w f-15 topicmonth" wx:if="{{item.show}}">{{item.create_en_month}} - {{item.create_month}}月</view>
+    <navigator url="/pages/topicinfo/topicinfo?id={{item.id}}">
+      <view class="topicimg" style="background-image:url('{{item.pic_url}}')">
+        <view class="topicinfo">
+          <view class="f-12">话题</view>
+          <view>———</view>
+          <view class="f-16 f-w">#{{item.name}}#</view>
+          <view class="f-12 mt-10">
+            <span wx:if="{{item.read_num>0}}">{{item.read_num}} 人参与,</span>
+            <span wx:if="{{item.recom_num>0}}">{{item.recom_num}} 条内容值得看</span>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+</view>
+<!-- <view class="mastbar" bindtap="posted">
+  <image class="release" src="/images/write.png"></image>
+  <view class="text-c f-12">动态</view>
+</view> -->
+<tabbar tabbar="{{tabbar}}"></tabbar>
+<view class="weui-demo-dialog {{istrue ? 'weui-demo-dialog_show' : ''}}">
+  <view class="weui-mask" bindtap="closeDialog"></view>
+  <view class="weui-half-screen-dialog" catchtap="stopEvent">
+    <view class="weui-half-screen-dialog__hd text-c">
+      <view class="weui-half-screen-dialog__hd__main">
+        <view class="weui-half-screen-dialog__subtitle">——————
+          <span class="c-black">分享</span> ——————</view>
+      </view>
+    </view>
+    <view class="weui-half-screen-dialog__bd">
+      <view class="weui-half-screen-dialog__desc">
+        <view class="share text-c">
+          <image class="friends" src="/images/friends.png" />
+        </view>
+        <button open-type="share" bindtap="closeDialog" class="share text-c">
+          <image class="wechat" src="/images/wechat.png" />
+        </button>
+      </view>
+    </view>
+    <view class="closehalf" bindtap="closeDialog">
+      取消
+    </view>
+  </view>
+</view>
+<view class="loading" hidden="{{!searchLoading}}" style="margin-bottom:90rpx;">
+  <image class="gif" src="/images/loading_lexus.gif"></image>
+</view>
+<view class="loading" hidden="{{!searchLoadingComplete}}">已加载全部</view>

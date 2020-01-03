@@ -1,0 +1,74 @@
+.tabbar_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100rpx;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px 1px;
+}
+
+.tabbar_box.iphoneX-height {
+  padding-bottom: 66rpx;
+}
+
+.middle-wrapper {
+  position: absolute;
+  right: 310rpx;
+  bottom: 0;
+  background-color: #fff;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border-top: 2rpx solid #f2f2f3;
+}
+
+.middle-wrapper.iphoneX-height {
+  bottom: 66rpx;
+}
+
+.tabbar_nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  height: 100%;
+  position: relative;
+}
+text{
+  color: #3a3a3a;
+}
+.tabbar_icon {
+  width: 60%;
+}
+
+.special-wrapper {
+  position: absolute;
+  top: -40rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border-top: 2rpx solid #f2f2f3;
+  background-color: #5ABD8B;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 6rpx;
+}
+
+.special-wrapper .tabbar_icon {
+  width: 70%;
+  height: 80%;
+  padding-top: 28%;
+}
+
+.special-text-wrapper {
+  width: 56rpx;
+  height: 56rpx;
+}

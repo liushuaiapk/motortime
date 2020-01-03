@@ -1,0 +1,24 @@
+<view class="leftbox">
+  <block wx:for="{{rightlist}}" wx:key="*this">
+    <view class="topiclass {{item.id==active?'active':''}} f-12" data-code="{{item.id}}" data-index="{{index}}" bindtap="chooseLeft">
+      <span class="borderleft" wx:if="{{item.id==active}}"></span>{{item.name}}</view>
+  </block>
+</view>
+<view class="rightbox">
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd" wx:for="{{list}}" wx:key="*this" data-code="{{item.id}}" data-name="{{item.name}}" bindtap="chooseTopic">
+        <view class="weui-media-box weui-media-box_appmsg">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{item.pic_url}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title f-15">#{{item.name}}#</view>
+            <view class="weui-media-box__desc f-12">讨论 {{item.recom_num}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="weui-btn btn-bottom" bindtap="addtopic">创建话题</button>
+</view>

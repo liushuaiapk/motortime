@@ -1,0 +1,83 @@
+<view class="input-box">
+  <!-- <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+      <view class="weui-cell__bd">
+        <input class="weui-input f-13" name="title" placeholder="请输入问题（最多40个字）" maxlength="40" />
+      </view>
+    </view>
+  </view> -->
+  <view class="pd-30">
+    <view class="ellipsis-2 f-w f-16">雷克萨斯NX300全驱版本，后轮最大能分到多少动力?</view>
+  </view>
+  <!-- <view class="weui-cells weui-cells_after-title">
+    <view class="parag">
+      <view class="f-12 paragtext text-l c-blue">首段文字</view>
+      <view class="f-12 paragtext text-r">移至顶部</view>
+      <view class="f-12 paragtext text-r">上移</view>
+      <view class="f-12 paragtext text-r">下移</view>
+      <view class="f-12 paragtext text-r">删除</view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea f-13" name="content" placeholder="请输入内容（最多5000字）" maxlength="5000" value="{{content}}" />
+      </view>
+    </view>
+    <view class="weui-uploader__bd">
+      <view class="weui-uploader__files" id="uploaderFiles">
+        <block wx:for="{{files}}" wx:key="*this">
+          <view class="weui-uploader__file">
+            <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" bindtap="previewImage" id="{{item}}" />
+            <view class="weui-badge picdel" data-num='{{index}}' bindtap="delpic">X</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="uplode-box">
+      <image src="/images/uplode.png" class="uplodedemo" bindtap="chooseImage"></image>
+      <image src="/images/topic.png" class="uplodedemo ml-50"></image>
+      <image src="/images/face.png" class="uplodedemo ml-50"></image>
+      <button class="btn-save">保存草稿</button>
+    </view>
+  </view> -->
+  <block wx:for='{{paragList}}' wx:key='item'>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="parag">
+        <view class="f-12 paragtextone text-l c-blue" wx:if='{{index==0}}'>首段文字</view>
+        <view class="f-12 paragtextone text-l c-blue" wx:if='{{index>0}}'>第【{{index}}】段文字</view>
+        <view class="f-12 paragtext text-r" data-code="{{index}}" bindtap="move_top" wx:if='{{index>0}}'>移至顶部</view>
+        <view class="f-12 paragtext text-r c-gray" wx:if='{{index==0}}'>移至顶部</view>
+        <view class="f-12 paragtextlast text-r" data-code="{{index}}" bindtap="move_last" wx:if='{{index>0}}'>上移</view>
+        <view class="f-12 paragtextlast text-r c-gray" wx:if='{{index==0}}'>上移</view>
+        <view class="f-12 paragtextlast text-r c-gray" data-code="{{index}}" bindtap="move_next" wx:if='{{index>0}}'>下移</view>
+        <view class="f-12 paragtextlast text-r c-gray" wx:elif='{{index==0&&num==1}}'>下移</view>
+        <view class="f-12 paragtextlast text-r" data-code="{{index}}" bindtap="move_next" wx:if='{{index==0&&num>1}}'>下移</view>
+        <view class="f-12 paragtextlast text-r c-gray" wx:if='{{index==0&&num==1}}'>删除</view>
+        <view class="f-12 paragtextlast text-r" wx:if='{{num>1}}' data-code="{{index}}" bindtap="del">删除</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea f-13" name="content" placeholder="请输入内容（最多5000字）" maxlength="5000" value="{{item.count}}" bindinput='textareaValue' data-code='{{index}}' />
+        </view>
+      </view>
+    </view>
+    <view class="weui-uploader__bd">
+      <view class="weui-uploader__files" id="uploaderFiles">
+        <block wx:for="{{files}}" wx:key="*this">
+          <view class="weui-uploader__file">
+            <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" bindtap="previewImage" id="{{item}}" />
+            <view class="weui-badge picdel" data-num='{{index}}' bindtap="delpic">X</view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="uplode-box">
+      <image src="/images/uplode.png" class="uplodedemo" bindtap="chooseImage"></image>
+      <image bindtap="addParag" src="/images/topic.png" class="uplodedemo ml-50"></image>
+      <image src="/images/face.png" class="uplodedemo ml-50"></image>
+      <button class="btn-save">保存草稿</button>
+    </view>
+  </block>
+</view>
+<view class="btn-box">
+  <button class="weui-btn">发布答案</button>
+</view>

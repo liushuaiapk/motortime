@@ -1,0 +1,7 @@
+<view class="tabbar_box {{isIphoneX?'iphoneX-height':''}}" style="background-color:#fff">
+  <block wx:for="{{tabbar.list}}" wx:key="{{item.pagePath}}">
+    <view class="tabbar_nav" hover-class="none" data-url="{{item.pagePath}}" style="color:{{item.selected ? tabbar.selectedColor : tabbar.color}}" bindtap="shareThere">
+      <image class="tabbar_icon" style="margin-top:{{item.selected ?-10 :0}}rpx" src="{{item.selected ? item.selectedIconPath : item.iconPath}}"></image>
+    </view>
+  </block>
+</view>

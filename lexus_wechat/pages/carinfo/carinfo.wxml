@@ -1,0 +1,45 @@
+<view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_access" wx:if="{{show}}">
+      <view class="weui-cell__bd f-13 f-w">认证车型</view>
+      <view class="weui-cell__ft f-12 ellipsis-1">{{model_name}}</view>
+    </view>
+    <navigator open-type="redirect" url="/pages/motormaster/motormaster" class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:else>
+      <view class="weui-cell__bd f-13 f-w">认证车型</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access f-12 ellipsis-1">{{model_name}}</view>
+    </navigator>
+
+  </view>
+  <view class="pd-30">
+    <view class="bg" style="background-image: url({{travel}})" data-code='travel' bindtap="chooseImage">
+      <view class="infobox" hidden="{{travelUp}}">
+        <image class="camera" src="/images/camera.png"></image>
+        <view class="f-w f-15">添加行驶证照片(必填)</view>
+      </view>
+    </view>
+  </view>
+  <view class="pd-30">
+    <view class="bg" style="background-image: url({{driving}})" data-code='driving' bindtap="chooseImage">
+      <view class="infobox" hidden="{{drivingUp}}">
+        <image class="camera" src="/images/camera.png"></image>
+        <view class="f-w f-15">添加驾驶证照片(必填)</view>
+      </view>
+    </view>
+  </view>
+</view>
+<checkbox-group bindchange="checkboxChange" hidden="{{show}}">
+  <label class="weui-cell weui-check__label">
+    <checkbox class="weui-check" checked="" />
+    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+      <icon class="weui-icon-checkbox_circle" type="circle" size="14" wx:if="{{!checked}}"></icon>
+      <icon class="weui-icon-checkbox_success" type="success" color='#605C6B' size="14" wx:if="{{checked}}"></icon>
+    </view>
+    <view class="weui-cell__bd f-12 mt-10">
+      <text class="c-gray">我已阅读并同意</text>
+      <text class="c-conten">汽车时间认证车主个人信息保护声明</text>
+    </view>
+  </label>
+</checkbox-group>
+<view class="btn-bott" hidden="{{show}}">
+  <button class="savebtn f-14" bindtap="savecars" plain="{{disabled}}" disabled="{{disabled}}">提交</button>
+</view>

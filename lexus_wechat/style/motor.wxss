@@ -1,0 +1,295 @@
+.f-9 {
+  font-size: 18rpx;
+}
+
+.f-10 {
+  font-size: 20rpx;
+}
+
+.f-11 {
+  font-size: 22rpx;
+}
+
+.f-12 {
+  font-size: 24rpx;
+}
+
+.f-13 {
+  font-size: 26rpx;
+}
+
+.f-14 {
+  font-size: 28rpx;
+}
+
+.f-15 {
+  font-size: 30rpx;
+}
+
+.f-16 {
+  font-size: 32rpx;
+}
+
+.f-17 {
+  font-size: 34rpx;
+}
+
+.f-18 {
+  font-size: 36rpx;
+}
+
+.f-20 {
+  font-size: 40rpx;
+}
+
+.f-30 {
+  font-size: 60rpx;
+}
+
+.mt-10 {
+  margin-top: 10rpx;
+}
+
+.mt-20 {
+  margin-top: 20rpx;
+}
+
+.mt-30 {
+  margin-top: 30rpx;
+}
+
+.mt-40 {
+  margin-top: 40rpx;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-60 {
+  margin-top: 60rpx;
+}
+
+.mb-10 {
+  margin-bottom: 10rpx;
+}
+
+.mb-20 {
+  margin-bottom: 20rpx;
+}
+
+.mb-30 {
+  margin-bottom: 30rpx;
+}
+
+.ml-10 {
+  margin-left: 10rpx;
+}
+
+.ml-20 {
+  margin-left: 20rpx;
+}
+
+.ml-30 {
+  margin-left: 30rpx;
+}
+
+.ml-40 {
+  margin-left: 40rpx;
+}
+
+.ml-50 {
+  margin-left: 50rpx;
+}
+
+.mr-10 {
+  margin-right: 10rpx;
+}
+
+.mr-20 {
+  margin-right: 20rpx;
+}
+
+.mr-30 {
+  margin-right: 30rpx;
+}
+
+.mr-40 {
+  margin-right: 40rpx;
+}
+
+.mr-50 {
+  margin-right: 50rpx;
+}
+
+.f-w {
+  font-weight: bold;
+}
+
+.f-l {
+  float: left;
+}
+
+.f-r {
+  float: right;
+}
+
+.pd-10 {
+  padding: 10rpx;
+}
+
+.pd-20 {
+  padding: 20rpx;
+}
+
+.pd-30 {
+  padding: 30rpx;
+}
+
+.ellipsis-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ellipsis-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ellipsis-4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c-gray {
+  color: #9a9a9a;
+}
+
+.c-blue {
+  color: #33a1ff;
+}
+
+.c-red {
+  color: #ef3535;
+}
+
+.c-gold {
+  color: #f6ab00;
+}
+
+.c-black {
+  color: #000;
+}
+
+.c-username {
+  color: #605c6b;
+}
+
+.c-intro {
+  color: #6a6a6a;
+}
+
+.text-c {
+  text-align: center;
+}
+
+.text-l {
+  text-align: left;
+}
+
+.text-r {
+  text-align: right;
+}
+
+.loading {
+  padding: 50rpx;
+  text-align: center;
+  font-size: 25rpx;
+  color: #9a9a9a;
+}
+
+.gif {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.bot-10 {
+  border-top: 20rpx solid #f8f8f8;
+}
+
+.collecticon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.weui-demo-dialog {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.weui-half-screen-dialog {
+  transition: all 0.3s;
+  transform: translateY(100%);
+}
+
+.weui-demo-dialog_show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.weui-half-screen-dialog__hd {
+  height: 100rpx;
+}
+
+.weui-demo-dialog_show .weui-half-screen-dialog {
+  transform: translateY(0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 0;
+}
+
+.weui-half-screen-dialog__subtitle {
+  color: #eaeaea;
+}
+
+.weui-half-screen-dialog__desc {
+  width: 100%;
+  display: flex;
+  padding: 20rpx 0;
+}
+
+.share {
+  width: 50%;
+  background-color: transparent;
+  line-height: 0;
+  padding: 0;
+}
+
+.friends {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.wechat {
+  width: 45rpx;
+  height: 40rpx;
+}
+
+.closehalf {
+  text-align: center;
+  font-size: 26rpx;
+  border-top: 1rpx solid #eaeaea;
+  padding: 40rpx 0;
+}

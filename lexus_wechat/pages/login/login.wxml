@@ -1,0 +1,8 @@
+<view class="login-box">
+  <image class="login-bg" src="/images/logo.png"></image>
+  <view class="f-20 c-gray mt-20 f-w">凌志范儿</view>
+</view>
+<view class="btn-box mt-50">
+  <button class="nologin f-15" bindtap='goback'>暂不登录</button>
+  <button class="login f-15" open-type="getUserInfo" bindgetuserinfo="userinfo">授权登录</button>
+</view>

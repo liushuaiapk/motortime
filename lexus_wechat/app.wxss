@@ -1,0 +1,2 @@
+@import 'style/weui.wxss';
+@import 'style/motor.wxss';

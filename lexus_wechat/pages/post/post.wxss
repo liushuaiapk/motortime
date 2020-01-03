@@ -1,0 +1,97 @@
+page {
+  padding-bottom: 140rpx;
+  overflow-x: hidden;
+}
+
+.postitle {
+  height: 160rpx;
+  padding: 30rpx;
+}
+
+.postcontent {
+  padding: 30rpx;
+  border-top: 20rpx solid #f8f8f8;
+}
+
+.weui-grids {
+  border-top: none;
+  border-left: none;
+}
+
+.weui-grid {
+  border-right: none;
+  border-bottom: none;
+  padding: 10px 0;
+}
+
+.weui-grid__icon {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.delpic {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 30rpx;
+}
+
+.bottombox {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  padding: 20rpx 0;
+}
+
+.post_pic {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 80rpx;
+  vertical-align: middle;
+}
+
+.btn-save {
+  color: #fff;
+  background-color: #605c6b;
+  font-weight: normal;
+  border-radius: 1.5px;
+  font-size: 24rpx !important;
+  float: right;
+}
+
+button[size='mini'] {
+  padding: 8rpx 40rpx;
+}
+
+.weui-badge {
+  display: inline-block;
+  padding: 5rpx 20rpx;
+  min-width: 8px;
+  border-radius: 2px;
+  background-color: #f3f9ff;
+  color: #728fc4;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+
+.weui-badged {
+  display: inline-block;
+  padding: 5rpx 20rpx;
+  min-width: 8px;
+  border-radius: 2px;
+  background-color: #f8f8f8;
+  color: #9a9a9a;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+
+.pdtop {
+  padding-top: 20rpx;
+  border-top: 2rpx solid #EAEAEA;
+}

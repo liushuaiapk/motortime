@@ -1,0 +1,246 @@
+page {
+  height: 100%;
+}
+
+.weui-navigation-bar {
+  position: relative;
+}
+
+.weui-navigation-bar__inner {
+  position: absolute;
+  background: #fff;
+}
+
+.mymotorcar-box {
+  padding: 30rpx;
+  height: 380rpx;
+  margin-bottom: 20px;
+}
+
+.mymotor-box {
+  padding: 30rpx;
+  height: 240rpx;
+}
+
+.border {
+  padding: 30rpx;
+  height: 240rpx;
+  margin-bottom: 30px;
+  box-shadow: 1.5rpx 0 3.75rpx 0 #dedad9, 0.75rpx 5.25rpx 9.75rpx 0 #dad4d3;
+}
+
+.border-car {
+  padding: 30rpx;
+  height: 380rpx;
+  text-align: center;
+  box-shadow: 1.5rpx 0 3.75rpx 0 #dedad9, 0.75rpx 5.25rpx 9.75rpx 0 #dad4d3;
+}
+
+.addbtn {
+  background: #605c6b;
+  color: #fff;
+  width: 350rpx;
+  height: 70rpx;
+  border-radius: 30px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 12px 24px;
+}
+
+.add-pic {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.btn-title {
+  display: inline-block;
+  margin-left: 10rpx;
+}
+
+.car-pic {
+  width: 198px;
+  height: 108px;
+}
+
+.card-border {
+  border: 1rpx solid #2f87db;
+  border-radius: 5rpx;
+}
+
+.province {
+  background: #2f87db;
+  color: #fff;
+  padding: 5rpx 8rpx;
+  border: 1rpx solid #2f87db;
+  border-top-left-radius: 5rpx;
+  border-bottom-left-radius: 5rpx;
+}
+
+.cardnum {
+  padding: 5rpx 8rpx;
+  border: 1rpx solid #2f87db;
+  border-top-right-radius: 5rpx;
+  border-bottom-right-radius: 5rpx;
+}
+
+.shaded {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+.choose {
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 15%;
+  font-size: 32rpx;
+  background: #fff;
+}
+
+.weui-cell:before {
+  border-top: 0rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.weui-cells:after {
+  border-bottom: 0rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.car-class {
+  width: 100%;
+  padding: 10px 16px;
+  background: #f6f6f6;
+}
+
+.car-classd {
+  width: 100%;
+  background: #f6f6f6;
+  padding: 6px 16px;
+}
+
+.pic-class {
+  margin-right: 12px;
+  vertical-align: middle;
+  width: 27px;
+  height: 20px;
+}
+
+.pic-tab {
+  margin-right: 16px;
+  vertical-align: middle;
+  width: 120rpx;
+  height: 100rpx;
+}
+
+.weui-cells:before {
+  border-top: 0rpx solid rgba(0, 0, 0, 0.1);
+}
+
+.weui-badge {
+  background-color: #969799;
+}
+
+/* 城市列表 */
+
+.list-detail, .list-city {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.list-detail .item-nav {
+  border-bottom: 1rpx solid #eee;
+}
+
+.list-detail .title, .history .title {
+  font-size: 32rpx;
+  color: #000;
+  line-height: 45rpx;
+}
+
+.list-detail .address, .history .address {
+  font-size: 28rpx;
+  color: #aaa;
+  white-space: normal;
+}
+
+.list-city {
+  position: relative;
+}
+
+.py {
+  box-sizing: border-box;
+  background: #eee;
+  font-size: 23rpx;
+  color: #aaa;
+  padding: 10rpx 25rpx;
+}
+
+.fullname {
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #555;
+  padding: 25rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.city-py {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  margin-top: -360rpx;
+}
+
+.active {
+  color: #fff;
+  background: #f6ab00;
+}
+
+.city-py view {
+  font-size: 25rpx;
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 12px;
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 5rpx;
+  margin-right: 10px;
+}
+
+.showPy {
+  width: 150rpx;
+  height: 150rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  line-height: 150rpx;
+  text-align: center;
+  font-size: 80rpx;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  color: #333;
+  box-shadow: 0 0 150rpx rgba(0, 0, 0, 0.35);
+}
+
+.hot-city {
+  border: 1rpx solid #eee;
+  display: inline-block;
+  margin: 25rpx 0 0 25rpx;
+  padding: 10rpx 25rpx;
+  font-size: 25rpx;
+}

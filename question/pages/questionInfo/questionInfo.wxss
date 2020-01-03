@@ -1,0 +1,10 @@
+@import '../question/index.wxss';
+
+.weui-btn {
+  color: #000;
+  background: #fff;
+}
+
+.answer-box {
+  border-top: 10rpx solid #eaeaea;
+}

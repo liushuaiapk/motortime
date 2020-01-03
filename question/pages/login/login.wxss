@@ -1,0 +1,44 @@
+.region {
+  width: 100%;
+  font-size: 30rpx;
+  position: fixed;
+  top: 0rpx;
+  z-index: 999;
+}
+
+.back {
+  width: 80rpx;
+}
+
+.back-pic {
+  width: 20rpx;
+  height: 40rpx;
+}
+
+.login-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.login-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-box {
+  position: fixed;
+  right: 40rpx;
+}
+
+.login {
+  width: 280rpx;
+  background: #fdf7e9;
+  margin-bottom: 24rpx;
+}
+
+.nologin {
+  width: 280rpx;
+  background: none;
+  color: #fdf7e9;
+  border: 1rpx solid #fdf7e9;
+}

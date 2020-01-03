@@ -1,0 +1,45 @@
+<view class="topbtn" style="height:{{100+handtop}}rpx;background:{{navbackground}}">
+  <view class="f-l" style="margin-top:{{18+handtop}}rpx;position: absolute;" bindtap="goMember">
+    <image class="headpic" src="{{avatar?avatar:'../../images/default.png'}}" mode="aspectFill"></image>
+  </view>
+  <view class="navtitle" style="margin-top:{{18+handtop}}rpx">
+    <image class="navpic" src="/images/navstudy.png"></image>
+  </view>
+  <view class="nav-scroll">
+    <scroll-view class="scroll-view_H" scroll-x="true" scroll-left="{{navScrollLeft}}" scroll-with-animation="true">
+      <text wx:for='{{channel}}' catchtap="handleTap" data-code="{{item.id}}" data-index="{{index}}" class="f-w {{activeIndex==index ? 'weui-bar_on' : 'nav-name'}}">{{item.title}}</text>
+    </scroll-view>
+  </view>
+</view>
+<view style="margin-top:{{140+handtop}}rpx;padding-bottom: 20rpx;">
+  <view class="weui-panel__bd" wx:for="{{list}}">
+    <navigator url="/pages/articleinfo/articleinfo?id={{item.id}}" class="weui-media-box weui-media-box_appmsg" wx:if="{{item.module.id==1}}" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" mode="aspectFill" src="{{item.pic_url}}" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg" style="position: relative;">
+        <view class="ellipsis-4 f-15">
+          <span class="weui-badge mr-20" wx:if="{{item.label}}">{{item.label.name}}</span>
+          <span class="f-w arttitle">{{item.title}}</span>
+        </view>
+        <view class="weui-media-box__desc f-12 c-gray source">{{item.media.name}}</view>
+      </view>
+    </navigator>
+    <navigator url="/pages/articleinfo/articleinfo?id={{item.id}}" wx:if="{{item.module.id==2}}" hover-class="weui-cell_active">
+      <view class="ellipsis-4 f-15 pd-30">
+        <span class="weui-badge mr-20" wx:if="{{item.label}}">{{item.label.name}}</span>
+        <span class="f-w arttitle">{{item.title}}</span>
+      </view>
+      <view class="pic-box">
+        <image class="weui-media-box__thumb picmode" mode="aspectFill" src="{{item.pics[0].img_url}}"></image>
+        <image class="picicon" src="/images/picture.png"></image>
+      </view>
+      <view class="f-12 c-gray pd-30">{{item.media.name}}</view>
+    </navigator>
+  </view>
+</view>
+<tabbar tabbar="{{tabbar}}"></tabbar>
+<view class="loading" hidden="{{!searchLoading}}" style="margin-bottom:90rpx;">
+  <image class="gif" src="/images/loading_lexus.gif"></image>
+</view>
+<view class="loading" hidden="{{!searchLoadingComplete}}">已加载全部</view>

@@ -1,0 +1,62 @@
+<image class="bg-pic" src="{{picbg?picbg:'/images/my/member_bg.png'}}" mode="aspectFill" bindtap="choosePic"></image>
+<view class="memberinfo" style="z-index:{{zindex}}">
+  <image class="memavatar" src="{{info.avatar?info.avatar:'/images/default.png'}}" mode="aspectFill"></image>
+  <view class="f-14 f-w mt-20" wx:if="{{info.username}}">{{info.username}}</view>
+  <view class="f-18 f-w mt-20 c-gray" bindtap="goLogin" wx:else>立即登录</view>
+  <view class="f-13 mt-10 c-intro" wx:if="{{info.username}}">{{info.intro}}</view>
+  <view class="box mt-30">
+    <view class="boxi">
+      <span class="f-13 c-gray">点赞</span>
+      <span class="f-13 f-w ml-20">{{info.praise_num}}</span>
+    </view>
+    <view class="boxi">
+      <span class="f-13 c-gray">关注</span>
+      <span class="f-13 f-w ml-20">{{info.follow_num}}</span>
+    </view>
+    <view class="boxi">
+      <span class="f-13 c-gray">粉丝</span>
+      <span class="f-13 f-w ml-20">{{info.fans_num}}</span>
+    </view>
+  </view>
+</view>
+<view class="scrollist">
+  <view class="dynamicbox">
+    <view class="dynamic" wx:for="{{list}}" wx:if="{{!item.video}}">
+      <view class="years mb-20" wx:if="{{item.yearshow}}">{{item.year}}</view>
+      <view class="dislinblock">
+        <view class="lefttime">
+          <view class="f-20 f-w" wx:if="{{item.monshow}}">{{item.date}}</view>
+          <view class="f-14 c-gray mt-20"></view>
+        </view>
+        <view class="rightbox">
+          <view class="f-12 c-gray">{{item.cate.type}} - {{item.time}}</view>
+          <view wx:if="{{item.cate.id==1}}" data-code="{{item.id}}" data-url="{{item.url}}" bindtap="goBbsinfo">
+            <view class="f-15 f-w mt-30 ellipsis-2" wx:if="{{item.title}}">{{item.title}}</view>
+            <view class="f-15 mt-30 ellipsis-4" wx:if="{{item.content}}">{{item.content}}</view>
+            <image class="dynamicpic mt-30" wx:if="{{item.image.length>0}}" src="{{item.image[0]}}" mode="aspectFill"></image>
+            <image wx:if="{{item.image.length>1}}" class="picicon" src="/images/picture.png"></image>
+          </view>
+          <view wx:if="{{item.cate.id==4}}">
+            <view class="f-15 f-w mt-30 ellipsis-2" wx:if="{{item.title}}">{{item.title}}</view>
+            <view class="f-15 mt-30 ellipsis-4" wx:if="{{item.content}}">{{item.content}}</view>
+            <image class="dynamicpic mt-30" wx:if="{{item.image.length>0}}" src="{{item.image[0]}}" mode="aspectFill"></image>
+            <image wx:if="{{item.image.length>1}}" class="picicon" src="/images/picture.png"></image>
+          </view>
+          <view class="pd-15 disflex">
+            <image class="binpic" src="/images/collect.png" data-type="{{item.is_praise}}"></image>
+            <span class="f-12 ml-20" wx:if="{{item.praise_num>0}}">{{item.praise_num}}</span>
+            <image class="binpic ml-50" src="/images/comment.png"></image>
+            <span class="f-12 ml-20" wx:if="{{item.comment_num>0}}">{{item.comment_num}}</span>
+            <view class="f-r" data-code="{{item.id}}" bindtap="openDialog">
+              <image class="binpic" src="/images/outrelay.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="loading" hidden="{{!searchLoading}}" style="margin-bottom:90rpx;">
+  <image class="gif" src="/images/loading_lexus.gif"></image>
+</view>
+<view class="loading" hidden="{{!searchLoadingComplete}}">已加载全部</view>

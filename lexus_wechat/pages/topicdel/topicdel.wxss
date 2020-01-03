@@ -1,0 +1,26 @@
+.weui-badge {
+  display: inline-block;
+  padding: 5rpx 20rpx;
+  min-width: 8px;
+  border-radius: 2px;
+  background-color: #f3f9ff;
+  color: #728fc4;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+
+.btn-boxx {
+  position: fixed;
+  bottom: 20rpx;
+  justify-content: center;
+  width: 100%;
+}
+
+.delall {
+  background-color: #f8f8f8;
+  color: #9a9a9a;
+  font-weight: 400;
+  margin-left: 20rpx;
+}

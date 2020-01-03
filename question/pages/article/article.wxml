@@ -1,0 +1,148 @@
+<view style="position: relative;bottom:{{botheight}}rpx">
+  <view class="article-box" style="margin-top:{{botheight}}rpx">
+    <view class="title f-17 f-w">8.59万元起售 新款东风风神AX5正式上市新款东风风神正式</view>
+    <view class="member-box mt-40">
+      <image class="member-head" src="../../images/0.jpg"></image>
+      <view class="group-time">汽车行业关注 02-21 16:05</view>
+    </view>
+    <view class="article-info">
+      <view class="f-14 mt-40">北京时间5月14日，《旧金山纪事报》记者Connor Letourneau报道了勇士前锋凯文-杜兰特的恢复情况。
+      </view>
+      <view class="f-14 mt-40">因右小腿拉伤，杜兰特将缺席西决首战，并于本周五重新评估伤情，因此第二场也不太可能出战。但勇士队对于他将在西决第三战复出感到乐观。</view>
+      <view class="f-14 mt-40">
+        <image class="article-pic" src="../../images/0.jpg"></image>
+      </view>
+      <view class="f-14 mt-40 c-gray">版权声明：文章仅代表作者个人观点，不代表汽车时间立场。未经作者许可，请勿转载。</view>
+    </view>
+    <view class="text-c">
+      <view class="disflexd">
+        <view class="recom mr-10">
+          <image class="recom-pic" src="../../images/zan-active.png"></image>
+          值得看 20</view>
+      </view>
+      <view class="disflexd">
+        <view class="recom mr-10">
+          <image class="recom-pic" src="../../images/nozan.png"></image>
+          一般般 10</view>
+      </view>
+    </view>
+  </view>
+  <view class="foryou">
+    <view class="f-13 f-w">为您推荐</view>
+    <view class="weui-panel">
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg f-l">
+            <image class="weui-media-box__thumb" src="../../images/0.jpg" />
+          </view>
+          <view class="weui-media-box__title weui-media-box__title_in-text f-15 f-w f-ws f-line">8.59万元起售 新款东风风神AX5正式上市
+            <view class="hotnews">热门</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-panel">
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg f-l">
+            <image class="weui-media-box__thumb" src="../../images/0.jpg" />
+          </view>
+          <view class="weui-media-box__title weui-media-box__title_in-text f-15 f-w f-ws f-line">8.59万元起售 新款东风风神AX5正式上市
+            <view class="hotnews">热门</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="comment">
+    <view class="f-13 f-w f-l comfont">全部评论</view>
+    <view class="f-13 f-r c-gray">按热度</view>
+
+  </view>
+  <view class="commentlist">
+    <view class="weui-ownpanel weui-panel">
+      <view class="comemhead f-l">
+        <image class="member-head" src="../../images/0.jpg"></image>
+      </view>
+      <view class="f-l right-list">
+        <view class="ml-10">
+          <text class="f-15 f-w">斑布大斑布</text>
+          <view class="f-r">
+            <image class="recom-pic mr-20" src="/images/zan.png"></image>
+            <text class="f-12 c-gray">100</text>
+          </view>
+        </view>
+        <view class="f-15 ml-10">车真好看，我要买10辆！</view>
+        <view class="f-12 ml-10 mb-30">
+          <text class="c-gray">2019-05-28 15:05:21 · </text>
+          <text>回复(10)</text>
+          <view class="f-r c-gray f-12">举报</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-ownpanel weui-panel">
+      <view class="comemhead f-l">
+        <image class="member-head" src="../../images/0.jpg"></image>
+      </view>
+      <view class="f-l right-list">
+        <view class="ml-10">
+          <text class="f-15 f-w">斑布大斑布</text>
+          <view class="f-r">
+            <image class="recom-pic mr-20" src="/images/zan.png"></image>
+            <text class="f-12 c-gray">100</text>
+          </view>
+        </view>
+        <view class="f-15 ml-10">车真好看，我要买10辆！</view>
+        <view class="f-12 ml-10 mb-30">
+          <text class="c-gray">2019-05-28 15:05:21 · </text>
+          <text>回复(10)</text>
+          <view class="f-r c-gray f-12">举报</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-ownpanel weui-panel">
+      <view class="comemhead f-l">
+        <image class="member-head" src="../../images/0.jpg"></image>
+      </view>
+      <view class="f-l right-list">
+        <view class="ml-10">
+          <text class="f-15 f-w">斑布大斑布</text>
+          <view class="f-r">
+            <image class="recom-pic mr-20" src="/images/zan.png"></image>
+            <text class="f-12 c-gray">100</text>
+          </view>
+        </view>
+        <view class="f-15 ml-10">车真好看，我要买10辆！</view>
+        <view class="f-12 ml-10 mb-30">
+          <text class="c-gray">2019-05-28 15:05:21 · </text>
+          <text>回复(10)</text>
+          <view class="f-r c-gray f-12">举报</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="posbottom" style="height:{{botheight}}rpx" hidden="{{inputshow}}">
+    <view class="weui-input" placeholder="" bindtap="focusinput">发表评论...</view>
+    <view class="iconright">
+      <view class="bottom-icon">
+        <image class="bicon mr-10" src="/images/comment.png"></image>
+        <text class="c-gray f-12">100</text>
+      </view>
+      <view class="bottom-icon" bindtap="bindCollect" hidden="{{collect}}">
+        <image class="bicon" src="/images/collect.png"></image>
+      </view>
+      <view class="bottom-icon" bindtap="bindClose" hidden="{{!collect}}">
+        <image class="bicon" src="/images/collect_active.png"></image>
+      </view>
+      <view class="bottom-icon">
+        <button class="share-btn" open-type="share">
+          <image class="bicon" src="/images/shared.png"></image>
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class="posbottom" style="height:{{botheight}}rpx" hidden="{{!inputshow}}">
+    <input class="weui-inputd" placeholder="发表评论..." cursor-spacing="20" bindblur="blirinput" focus="{{inputshow}}"></input>
+    <button class="weui-btn mini-btn btn-save">发表</button>
+  </view>
+</view>
